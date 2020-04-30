@@ -1,12 +1,7 @@
-<hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
-<input type="text" ngModel={{a}}>
-<input type="text" ngModel={{o}}>
-<input type="text" ngModel={{b}}> <br/><br/>
+<input [(ngModel)] = "a" type="text" />
+<br/><br/>
 
-<button name="7">7</button> <button name="7">8</button> <button name="7">9</button> <br/>
-<button name="7">4</button> <button name="7">5</button> <button name="7">6</button> <br/>
-<button name="7">1</button> <button name="7">2</button> <button name="7">3</button> <br/>
-<button name="7">-</button> <button name="7">+</button> <button name="*">*</button> <button name="=">9</button> <br/><br/>
+<button (click)="7()">7</button> <button (click)="8()">8</button> <button (click)="9()">9</button>  <br/>
+<button (click)="4()">4</button> <button (click)="5()">5</button> <button (click)="6()">6</button>  <br/>
+<button (click)="1()">1</button> <button (click)="2()">2</button> <button (click)="3()">3</button>  <br/>
+<button (click)="kurang()">-</button> <button (click)="tambah()">+</button> <button (click)="kali()">*</button> <button (click)="hasil()">=</button> <br/><br/>
